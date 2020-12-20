@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>Erza Putra Albasori - CV Online</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+
+</head>
+
+<body>
+<header>
+    <h1>Erza Putra Albasori</h1>
+    <p>
+        Saya seorang software engineer. Berpengalaman secara profesional selama 2 tahun. Mahir dalam menggunakan
+        bahasa
+        pemrograman C++, Java, Javascript, PHP. Serta menggunakan framework laravel, bootstrap.
+    </p>
+</header>
+<div id="content">
+    <div class="card">
+        <div class="card-image">
+            <img src="images/gambung.png" alt="portfolio" width="100%">
+        </div>
+        <div class="card-content">
+            <h2>Software Engineer at Gambung Store</h2>
+            <p>Menjadi software engineer secara full time selama 1 tahun di gambungstore.id</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-image">
+            <img src="images/logo-senandika.png" alt="portfolio" width="100%">
+        </div>
+        <div class="card-content">
+            <h2>Software Engineer at PT Senandika Tekno Nusantara</h2>
+            <p>Menjadi software engineer secara full time selama 6 bulan di PT Senandika Tekno Nusantara</p>
+        </div>
+    </div>
+</div>
+<footer>
+    <a href="https://www.facebook.com/senandikanusantara" target="_blank">
+        <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+    <a href="https://instagram.com/erzaputra_" target="_blank">
+        <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+    </a>
+</footer>
+
+<button class="theme-button" onclick="darkModeHandler(this)">Dark Mode</button>
+
+<script>
+  let darkModeStatus = false;
+  darkModeHandler = (element) => {
+    const body = document.body;
+    const header = document.getElementsByTagName('header')[0];
+    const footer = document.getElementsByTagName('footer')[0];
+
+    body.classList.toggle('dark-theme');
+    header.classList.toggle('dark-theme');
+    footer.classList.toggle('dark-theme');
+
+    darkModeStatus = !darkModeStatus;
+    if(darkModeStatus) {
+      element.innerHTML = 'Light Mode';
+    } else {
+      element.innerHTML = 'Dark Mode';
+    }
+  }
+</script>
+
+</body>
+
+</html>
